@@ -7,33 +7,33 @@ Standards-Version: 3.8.4
 
 Package: aurex-gtk-theme
 Architecture: all
-Depends: ${misc:Depends}, greybird-gtk-theme, radiance-colors, aurex-icon-theme, aurex-wallpaper-theme, aurex-icon-theme, aurex-transmute
+Depends: ${misc:Depends}, radiance-colors, radiance-flat-colors, aurex-icon-theme, aurex-wallpaper-theme, aurex-icon-theme, aurex-transmute
 #, gnome-screensaver, aurex-gdm-theme
-Description: Aurex 14.04 theme
+Description: Aurex 16.04 theme
  AureX full theme for GNOME/XFCE
 
 Package: aurex-icon-theme
 Architecture: all
-Depends: ${misc:Depends}, aurex-transmute, flatwoken-icon-theme, xubuntu-icon-theme, rsync, libgtk2.0-bin
-Description: Aurex 14.04 icon theme
- AureX icon theme based on FlatWoken
+Depends: ${misc:Depends}, aurex-transmute, ardis-icons, xubuntu-icon-theme, rsync, libgtk2.0-bin
+Description: Aurex 16.04 icon theme
+ AureX icon theme based on Ardis
 
 Package: aurex-wallpaper-theme
 Architecture: all
 Depends: ${misc:Depends}
-Description: Aurex 14.04 wallpaper theme
+Description: Aurex 16.04 wallpaper theme
  AureX wallpaper theme
 
 Package: aurex-boot-theme-graphics
 Architecture: all
 Depends: ${misc:Depends}
-Description: Graphics for aurex 14.04 GRUB theme
+Description: Graphics for aurex 16.04 GRUB theme
  AureX grub2 theme (graphics files)
 
 Package: aurex-plymouth-theme
 Architecture: all
 Depends: ${misc:Depends}, aurex-transmute, plymouth, plymouth-label, plymouth-theme-script, plymouth-theme-text
-Description: Aurex 14.04 plymouth theme
+Description: Aurex 16.04 plymouth theme
  This package installs aurex-elementary theme, based on ElementaryOsBlueAviator.
  Old plymouth themes: aurex-stargate, floating-aurex and aurex-sunrise
  are also installed.
@@ -41,7 +41,7 @@ Description: Aurex 14.04 plymouth theme
 Package: aurex-translive-theme
 Architecture: all
 Depends: ${misc:Depends}
-Description: Aurex 14.04 translive artwork
+Description: Aurex 16.04 translive artwork
  This package installs aurex-translive splash images
 
 Package: aurex-ubiquity-theme
