@@ -32,7 +32,7 @@ Description: Graphics for aurex 16.04 GRUB theme
 
 Package: aurex-plymouth-theme
 Architecture: all
-Depends: ${misc:Depends}, aurex-transmute, plymouth, plymouth-label, plymouth-theme-script, plymouth-theme-text
+Depends: ${misc:Depends}, aurex-transmute, plymouth, plymouth-label, plymouth-themes, plymouth-theme-xubuntu-text
 Description: Aurex 16.04 plymouth theme
  This package installs aurex-elementary theme, based on ElementaryOsBlueAviator.
  Old plymouth themes: aurex-stargate, floating-aurex and aurex-sunrise
