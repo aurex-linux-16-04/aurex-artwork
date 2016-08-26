@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Ubuntu Studio Plymouth theme
+Description=Ubuntu Studio Plymounth theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/ubuntustudio-logo
+ScriptFile=/usr/share/plymouth/themes/ubuntustudio-logo/mdv.script

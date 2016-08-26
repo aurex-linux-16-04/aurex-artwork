@@ -3,3 +3,5 @@ floatinglogo/aurex/install/*		/lib/plymouth/themes/floating-aurex/
 floatinglogo/aurex/splash		/usr/share/aurex-transmute/plymouth-theme/base-files/etc/initramfs-tools/conf.d/
 Stargate/aurex/install/*		/lib/plymouth/themes/aurex-stargate/
 elementaryOsBlueAviator/aurex/install/*	/lib/plymouth/themes/aurex-elementary/
+ubuntustudio-logo/aurex/install/*	/usr/share/plymouth/themes/aurex-logo
+aurex-text/*				/usr/share/plymouth/themes/aurex-text

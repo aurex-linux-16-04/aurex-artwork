@@ -24,6 +24,7 @@ case "$1" in
 	update-alternatives --remove default.plymouth /lib/plymouth/themes/floating-aurex/floating-aurex.plymouth
 	update-alternatives --remove default.plymouth /lib/plymouth/themes/aurex-stargate/aurex-stargate.plymouth
 	update-alternatives --remove default.plymouth /lib/plymouth/themes/aurex-elementary/aurex-elementary.plymouth
+	update-alternatives --remove default.plymouth /usr/share/plymouth/themes/aurex-logo/aurex-logo.plymouth
 	update-alternatives --remove text.plymouth /lib/plymouth/themes/aurex-text/text.plymouth
 	[ "$1" != "remove" ] || update-initramfs -u
 

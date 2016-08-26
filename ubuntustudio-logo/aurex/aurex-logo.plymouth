@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Aurex Logo Plymouth theme
+Description=Aurex Logo Plymounth theme based on ubuntustudio
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/aurex-logo
+ScriptFile=/usr/share/plymouth/themes/aurex-logo/mdv.script
