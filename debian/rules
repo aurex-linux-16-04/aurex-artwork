@@ -50,6 +50,7 @@ build-stamp: configure-stamp
 
 	# generate grub themes
 	grub-themes/aurex-arch/build-script build
+	grub-themes/aurex-StylishDark/build-script build
 
 	# generate replacement icons
 	for D in aurex-logos/icons/* ; do d=install.aurex-icon-theme/icons/$${D##*/}; for F in $$D/*.svg; do fsvg=$${F##*/}; f=$${fsvg%.svg}; mkdir -p $$d/scalable; cp $$F $$d/scalable/$$fsvg; for s in $(ICON_SIZES) ; do mkdir -p $$d/$$s ; inkscape --without-gui --file=$$F --export-width=$$s --export-height=$$s --export-png=$$d/$$s/$$f.png ; done; done; done
@@ -103,6 +104,7 @@ clean:
 	rm -f grub/*.png
 	rm -rf install.aurex-icon-theme/icons
 	grub-themes/aurex-arch/build-script clean
+	grub-themes/aurex-StylishDark/build-script clean
 	space-sunrise/aurex/build-script clean
 	floatinglogo/aurex/build-script clean
 	ubuntustudio-logo/aurex/build-script clean

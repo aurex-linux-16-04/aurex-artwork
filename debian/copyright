@@ -138,6 +138,10 @@ Files: bitmaps/ws_Bulb_1920x1200.jpg
 Copyright: Copyright 2005-2015 WallpaperStock (http://fondos.wallpaperstock.net)
 License: free (unspecified)
 
+Files: bitmaps/green-power-button-1920x1080-wallpaper-15227.jpg
+Copyright: Copyright 2015 wallpaperfx (http://wallpaperfx.com)
+License: free (unspecified)
+
 Files: install.aurex-icon-theme/icons-static/22x22/apps/nm-*.png
 Copyright: Copyright 2010 Matthieu James <matthieu.james@gmail.com>
 License: GPL-3
@@ -209,6 +213,23 @@ License: GPL-2
 Files: grub-themes/aurex-arch/*
 Copyright: Copyright 2014 Luis Antonio Garcia Gisbert <luisgg@gmail.com>
 License: GPL-3+
+
+Files: grub-themes/StylishDark
+Copyright: Copyright 2015 vinceliuice (http://vinceliuice.deviantart.com/)
+License: GPL
+
+Files: grub-themes/aurex-StylishDark/*
+Copyright: Copyright 2016 Luis Antonio Garcia Gisbert <luisgg@gmail.com>
+License: GPL-3+
+
+Files: ubuntustudio-logo/*
+Copyright:  2007-2014 Scott Lavender <scottalavender@gmail.com>
+                      Charlie Brej   <cbrej@cs.man.ac.uk> - example provided with the "script plugin"
+                      Cory K. <coryisatm@nc.rr.com>
+                      Dennis Kaarsemaker <dennis@kaarsemaker.net>
+                      Jonathan Austin <mailforwho@googlemail.com>
+                      Frank Schoep <frank@ffnn.nl>
+License: Creative Commons Attribution-ShareAlike 3.0 Unported
 
 
 

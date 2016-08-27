@@ -1,0 +1,36 @@
+#!/bin/sh
+set -e
+WORK_DIR="$(dirname "$0")"
+THEME_DIR="$WORK_DIR/../StylishDark"
+IMG_LIST="aurex icons/aurex"
+FILE_LIST="theme.txt"
+
+case "$1" in
+	clean)
+		rm -rf $WORK_DIR/install
+		;;
+	*)
+		mkdir -p $WORK_DIR/install
+		cp -r $THEME_DIR/* $WORK_DIR/install/
+		for f in $IMG_LIST ; do
+			if [ -r "$WORK_DIR/${f}.xcf" ] ; then
+				echo ">>$WORK_DIR/${f}.xcf"
+				xcf2png "$WORK_DIR/${f}.xcf" > "$WORK_DIR/install/${f}.png"
+			elif [ -r "$WORK_DIR/${f}.png" ] ; then
+				echo ">>$WORK_DIR/${f}.png"
+				cp "$WORK_DIR/${f}.png" "$WORK_DIR/install/${f}.png"
+			fi
+
+		done
+		for f in $FILE_LIST ; do
+			if [ -r "$WORK_DIR/${f}" ] ; then
+				echo ">>$WORK_DIR/${f}"
+				cp "$WORK_DIR/${f}" "$WORK_DIR/install/${f}"
+			fi
+		done
+		#cp $WORK_DIR/*.script $WORK_DIR/*plymouth $WORK_DIR/README* $WORK_DIR/install/
+		;;
+esac
+
+exit 0
+

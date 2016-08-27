@@ -1,6 +1,6 @@
 aurex-artwork (16.04.3) xenial; urgency=medium
 
-  * Added new plymouth theme
+  * Added new plymouth and grub themes
 
  -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 26 Aug 2016 22:02:09 +0200
 
