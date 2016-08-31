@@ -1,3 +1,9 @@
+aurex-artwork (16.04.5) xenial; urgency=medium
+
+  * Updated aurex-color background image
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 31 Aug 2016 18:27:37 +0200
+
 aurex-artwork (16.04.4) xenial; urgency=medium
 
   * Updated gtk and icon theme
