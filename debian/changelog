@@ -1,6 +1,7 @@
 aurex-artwork (16.04.6) xenial; urgency=medium
 
   * distributor-logo updated 
+  * fixed aurex-plymouth
 
  -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 31 Aug 2016 19:08:01 +0200
 
