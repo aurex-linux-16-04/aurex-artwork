@@ -1,3 +1,9 @@
+aurex-artwork (16.04.6) xenial; urgency=medium
+
+  * distributor-logo updated 
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 31 Aug 2016 19:08:01 +0200
+
 aurex-artwork (16.04.5) xenial; urgency=medium
 
   * Updated aurex-color background image
