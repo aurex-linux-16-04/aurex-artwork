@@ -1,3 +1,9 @@
+aurex-artwork (16.04.4) xenial; urgency=medium
+
+  * Updated gtk and icon theme
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 31 Aug 2016 17:50:33 +0200
+
 aurex-artwork (16.04.3) xenial; urgency=medium
 
   * Added new plymouth and grub themes

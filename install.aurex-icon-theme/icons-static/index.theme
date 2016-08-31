@@ -1,17 +1,10 @@
 [Icon Theme]
-Name=Ardis Icon Theme circle
-Comment=Based on Ardis Icon Theme circle - git by KotusWorks. Modification theme 17.04.2015 ZMA zma.05@mail.ru.
+Name=aurex
+Comment=Aurex Icon theme based on Ardis Icon Theme circle - git by KotusWorks. Modification theme 17.04.2015 ZMA zma.05@mail.ru.
 Version=0.2
-Inherits=hicolor,GNOME,Oxygen
+Inherits=Ardis-icons
 Example=folder
-Directories=scalable/actions,scalable/apps,scalable/categories,scalable/devices,scalable/mimetypes,scalable/places,scalable/status
-
-[scalable/actions]
-Size=512
-Context=Actions
-Type=Scalable
-MinSize=8
-MaxSize=512
+Directories=scalable/apps
 
 [scalable/apps]
 Size=512
@@ -19,40 +12,3 @@ Context=Applications
 Type=Scalable
 MinSize=8
 MaxSize=512
-
-[scalable/categories]
-Size=512
-Context=Categories
-Type=Scalable
-MinSize=8
-MaxSize=512
-
-[scalable/devices]
-Size=512
-Context=Devices
-Type=Scalable
-MinSize=8
-MaxSize=512
-
-[scalable/mimetypes]
-Size=512
-Context=MimeTypes
-Type=Scalable
-MinSize=8
-MaxSize=512
-
-[scalable/places]
-Size=512
-Context=Places
-Type=Scalable
-MinSize=8
-MaxSize=512
-
-[scalable/status]
-Size=512
-Context=Status
-Type=Scalable
-MinSize=8
-MaxSize=512
-
-

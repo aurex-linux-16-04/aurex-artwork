@@ -2,45 +2,43 @@
 
 case "$1" in
     configure)
-	# link elementary-xfce-dark
-	for d in apps panel ; do
-		cp -aus /usr/share/icons/elementary-xfce-dark/$d/* /usr/share/icons/aurex/$d/
-	done
-#	# replace status icons
-#	STATUS_DIR="/usr/share/icons/potenza-dark/status"
-#	for d in $(ls $STATUS_DIR 2>/dev/null) ; do
-#		if [ -d "$STATUS_DIR/$d" ] && [ -d "/usr/share/icons/aurex/${d}x${d}/status" ] ; then
-#			rsync -a "$STATUS_DIR/$d/" "/usr/share/icons/aurex/${d}x${d}/status/" || true
-#		fi
+#	# link elementary-xfce-dark
+#	for d in apps panel ; do
+#		cp -aus /usr/share/icons/elementary-xfce-dark/$d/* /usr/share/icons/aurex/$d/
 #	done
-	# Generate index.theme
-	#cp /usr/share/aurex-icon-theme/index.thme /usr/share/icons/aurex/
-
-	# Add/replace custom files and replace user and avatar icons with FlatWoken ones
-	USER_ICON="/usr/share/icons/FlatWoken/scalable/apps/user.svg"
-	ICON_DIR="/usr/share/icons/aurex/apps"
-
+##	# replace status icons
+##	STATUS_DIR="/usr/share/icons/potenza-dark/status"
+##	for d in $(ls $STATUS_DIR 2>/dev/null) ; do
+##		if [ -d "$STATUS_DIR/$d" ] && [ -d "/usr/share/icons/aurex/${d}x${d}/status" ] ; then
+##			rsync -a "$STATUS_DIR/$d/" "/usr/share/icons/aurex/${d}x${d}/status/" || true
+##		fi
+##	done
+#	# Generate index.theme
+#	#cp /usr/share/aurex-icon-theme/index.thme /usr/share/icons/aurex/
+#
+	# Add/replace custom files and replace user and avatar icons with Ardis ones
+	USER_ICON="/usr/share/icons/Ardis-icons/scalable/apps/user.svg"
+	ICON_DIR="/usr/share/icons/aurex/scalable/apps"
+#
 	# Add/replace custom files
 	aurex-transmute --module=icon-theme transmute || true
 	# link distributor-logo/start-here icons to aurex
 	#PLACES_DIR="/usr/share/icons/aurex/places/"
-	for d in $(ls $ICON_DIR 2>/dev/null) ; do
-		for f in user.svg avatar-default.svg avatar-default-symbolic.svg ; do
-			ln -s $USER_ICON $ICON_DIR/$d/$f
-		done
-		for t in png svg ; do
-			if [ -r $ICON_DIR/$d/distributor-logo-aurex.$t ] ; then
-				for n in distributor-logo xubuntu-logo xubuntu-logo-menu ; do
-					ln -fs $ICON_DIR/$d/distributor-logo-aurex.$t $ICON_DIR/$d/$n.$t
-				done
-			fi
-			[ -r $ICON_DIR/$d/start-here-aurex.$t ] || ln -fs $ICON_DIR/$d/distributor-logo-aurex.$t $ICON_DIR/$d/start-here-aurex.$t
-			ln -fs $ICON_DIR/$d/start-here-aurex.$t $ICON_DIR/$d/start-here.$t
-			[ -r $ICON_DIR/$d/xfce4-whiskermenu-aurex.$t ] || ln -fs $ICON_DIR/$d/distributor-logo-aurex.$t $ICON_DIR/$d/xfce4-whiskermenu-aurex.$t
-			ln -fs $ICON_DIR/$d/xfce4-whiskermenu-aurex.$t $ICON_DIR/$d/xfce4-whiskermenu.$t
-			[ -r $ICON_DIR/$d/xfce4-panel-menu-aurex.$t ] || ln -fs $ICON_DIR/$d/distributor-logo-aurex.$t $ICON_DIR/$d/xfce4-panel-menu-aurex.$t
-			ln -fs $ICON_DIR/$d/xfce4-panel-menu-aurex.$t $ICON_DIR/$d/xfce4-panel-menu.$t
-		done
+	for f in user.svg avatar-default.svg avatar-default-symbolic.svg ; do
+		ln -s $USER_ICON $ICON_DIR/$f
+	done
+	for t in png svg ; do
+		if [ -r $ICON_DIR/distributor-logo-aurex.$t ] ; then
+			for n in distributor-logo xubuntu-logo xubuntu-logo-menu ; do
+				ln -fs $ICON_DIR/distributor-logo-aurex.$t $ICON_DIR/$n.$t
+			done
+			[ -r $ICON_DIR/start-here-aurex.$t ] || ln -fs $ICON_DIR/distributor-logo-aurex.$t $ICON_DIR/start-here-aurex.$t
+		fi
+		ln -fs $ICON_DIR/start-here-aurex.$t $ICON_DIR/start-here.$t
+		[ -r $ICON_DIR/xfce4-whiskermenu-aurex.$t ] || ln -fs $ICON_DIR/distributor-logo-aurex.$t $ICON_DIR/xfce4-whiskermenu-aurex.$t
+		ln -fs $ICON_DIR/xfce4-whiskermenu-aurex.$t $ICON_DIR/xfce4-whiskermenu.$t
+		[ -r $ICON_DIR/xfce4-panel-menu-aurex.$t ] || ln -fs $ICON_DIR/distributor-logo-aurex.$t $ICON_DIR/xfce4-panel-menu-aurex.$t
+		ln -fs $ICON_DIR/xfce4-panel-menu-aurex.$t $ICON_DIR/xfce4-panel-menu.$t
 	done
 	gtk-update-icon-cache -tf /usr/share/icons/aurex || true
 	;;
