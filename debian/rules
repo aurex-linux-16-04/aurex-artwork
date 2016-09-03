@@ -40,8 +40,8 @@ build-stamp: configure-stamp
 	cat debian/wallpapers-bottom.xml >> wallpapers/aurex-wallpapers.xml
 
 	# generate desktop-base xml
-	pngwidth=`file wallpapers/aurex-color.png |cut -f 2 -d , |sed -e "s%^[[:blank:]]%%;s%[[:blank:]].*$%%"`
-	pngheight=`file wallpapers/aurex-color.png |cut -f 2 -d , |sed -e "s%^.*x[[:blank:]]*%%;s%[[:blank:]].*$%%"`
+	pngwidth=`file wallpapers/aurex-color.png |cut -f 2 -d , |sed -e "s%^[[:blank:]]%%;s%[[:blank:]].*$$%%"`
+	pngheight=`file wallpapers/aurex-color.png |cut -f 2 -d , |sed -e "s%^.*x[[:blank:]]*%%;s%[[:blank:]].*$$%%"`
 	sed -e "s%_@_pngwidth_@_%$$pngwidth%g;s%_@_pngheight_@_%$$pngheight%g" debian/desktop-background.xml.in > wallpapers/aurex-color.xml
 
 	# aurex-ubiquity-theme:
