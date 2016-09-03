@@ -1,2 +1,3 @@
 grub/*.png				/usr/share/aurex-transmute/boot-theme/base-files/usr/share/pixmaps/aurex/
+grub/aurex-grub.png			/usr/share/images/desktop-base/
 grub-themes/aurex-StylishDark/install/*	/usr/share/aurex-transmute/boot-theme/base-files/boot/grub/themes/aurex/
