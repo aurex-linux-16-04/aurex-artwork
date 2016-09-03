@@ -22,6 +22,7 @@ case "$1" in
 	# remove alternative for the background image and XML
 	update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/aurex-color.xml
 	update-alternatives --remove desktop-background /usr/share/images/desktop-base/aurex-color.png
+	update-alternatives --remove desktop-grub /usr/share/images/desktop-base/aurex-color.png
     ;;
 
     failed-upgrade)
