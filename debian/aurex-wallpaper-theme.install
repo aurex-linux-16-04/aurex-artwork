@@ -1,2 +1,4 @@
 wallpapers/*.png		/usr/share/backgrounds/
 wallpapers/aurex-wallpapers.xml	/usr/share/gnome-background-properties/
+wallpapers/aurex-color.png 	/usr/share/images/desktop-base/
+wallpapers/aurex-color.xml	/usr/share/images/desktop-base/

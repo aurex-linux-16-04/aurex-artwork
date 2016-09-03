@@ -39,6 +39,11 @@ build-stamp: configure-stamp
 	for F in wallpapers/*.xcf ; do f=$${F%.xcf}; xcf2png $$F >$$f.png; basef=$${f##*/}; X=debian/$$basef.xml.in; [ -r "$$X" ] || X=debian/wallpaper.xml.in; sed -e "s%_@_basename_@_%$$basef%g;s%_@_filename_@_%$$basef.png%g" $$X >> wallpapers/aurex-wallpapers.xml; echo "/usr/share/backgrounds/$$basef.png /usr/share/xfce4/backdrops/$$basef.png" >> debian/aurex-wallpaper-theme.links; echo "/usr/share/backgrounds/$$basef.png /usr/share/aurex/backdrops/$$basef.png" >> debian/aurex-wallpaper-theme.links ;done
 	cat debian/wallpapers-bottom.xml >> wallpapers/aurex-wallpapers.xml
 
+	# generate desktop-base xml
+	pngwidth=`file wallpapers/aurex-color.png |cut -f 2 -d , |sed -e "s%^[[:blank:]]%%;s%[[:blank:]].*$%%"`
+	pngheight=`file wallpapers/aurex-color.png |cut -f 2 -d , |sed -e "s%^.*x[[:blank:]]*%%;s%[[:blank:]].*$%%"`
+	sed -e "s%_@_pngwidth_@_%$$pngwidth%g;s%_@_pngheight_@_%$$pngheight%g" debian/desktop-background.xml.in > wallpapers/aurex-color.xml
+
 	# aurex-ubiquity-theme:
 		# copy default wallwaper as replacement for ubiquity install mode background
 	mkdir -p $(UBIQUITY_BASEDIR)/usr/share/backgrounds
@@ -101,6 +106,7 @@ clean:
 	# Add here commands to clean up after the build process.
 	rm -f wallpapers/*.png
 	rm -f wallpapers/aurex-wallpapers.xml
+	rm -f wallpapers/aurex-color.xml
 	rm -f debian/aurex-wallpaper-theme.links
 	rm -f grub/*.png
 	rm -rf install.aurex-icon-theme/icons

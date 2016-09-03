@@ -1,3 +1,10 @@
+aurex-artwork (16.04.8) xenial; urgency=medium
+
+  * Fixed briefly deban wallpapaer show when grub exits
+  * Updated aurex grub icon
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Sat, 03 Sep 2016 13:09:04 +0200
+
 aurex-artwork (16.04.7) xenial; urgency=medium
 
   * translive images updated
