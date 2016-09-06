@@ -80,6 +80,7 @@ build-stamp: configure-stamp
 
 	mkdir -p install.translive
 	for F in aurex-logos/translive/*.svg ; do ff=$${F%.svg}; f=$${ff##*/}; inkscape --without-gui --file=$$F --export-png=install.translive/$$f.png ; done
+	cp wallpapers/aurex-color.png install.translive/aurex-grub-efi.png
 
 	# generate custom image under faces directory to install in gtk-theme package
 	mkdir -p install.aurex-gtk-theme/faces

@@ -1,3 +1,9 @@
+aurex-artwork (16.04.12) xenial; urgency=medium
+
+  * Updated artwork for efi boot
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 06 Sep 2016 16:57:30 +0200
+
 aurex-artwork (16.04.11) xenial; urgency=medium
 
   * Replace dependency on unity-greeter with unity-greeter-lightcolor
