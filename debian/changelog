@@ -1,3 +1,9 @@
+aurex-artwork (16.04.13) xenial; urgency=medium
+
+  * aurex-unplugged-theme as dependens of aurex-lightdm-theme
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Sun, 10 Sep 2017 18:12:46 +0200
+
 aurex-artwork (16.04.12) xenial; urgency=medium
 
   * Updated artwork for efi boot
